@@ -22,7 +22,7 @@ def press(key):
             number_count += 1
             with open(log_file, "a") as f:
                 f.write(f"Number pressed: {key.char}\n")
-        elif key.char in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', ';', ':', ',', '.', '/', '?', '~', '`', '\\', '|']:  # Check for special symbols
+        elif key.char in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', ';', ':', ',', '.', '/', '?', '~', '`', '\\', '|']:  
             special_symbol_count += 1
             with open(log_file, "a") as f:
                 f.write(f"Special symbol pressed: {key.char}\n")
